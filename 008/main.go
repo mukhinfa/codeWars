@@ -3,8 +3,6 @@
 
 package kata
 
-import "fmt"
-
 func CountPositivesSumNegatives(numbers []int) []int {
 	var res []int = []int{0, 0}
 	for i := 0; i < len(numbers); i++ {
@@ -16,8 +14,4 @@ func CountPositivesSumNegatives(numbers []int) []int {
 	}
 
 	return res // your code here
-}
-func main() {
-	n := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15}
-	fmt.Println(CountPositivesSumNegatives(n))
 }
